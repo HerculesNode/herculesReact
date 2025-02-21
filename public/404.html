@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="/joose.svg" />
+    <meta charset="utf-8">
+    <title>Vite + React + TS</title>
+    <script>
+      // Store the full URL including query parameters
+      sessionStorage.setItem('redirect', window.location.pathname + window.location.search);
+      // Redirect to the root while preserving query parameters
+      window.location.href = '/' + window.location.search;
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
