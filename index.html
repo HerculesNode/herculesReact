@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React + TS</title>
+  <script>
+    // Check for redirect from 404.html
+    (function () {
+        const redirect = sessionStorage.getItem("redirect");
+        if (redirect) {
+            sessionStorage.removeItem("redirect");
+            if (redirect !== "/") {
+                history.replaceState(null, null, redirect);
+            }
+        }
+    })();
+</script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
